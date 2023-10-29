@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    background: linear-gradient(111.23deg, #E9F7FF 9.95%, #FFDBD5 85.17%);
+  }
+
+.backimg{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/public/assets/images/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: static;
+}
+
+
+
+
