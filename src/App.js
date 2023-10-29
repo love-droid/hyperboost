@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Masterpage/>}>
           <Route path='/' element={<Initial/>}/>
-          <Route path='/' element={<Card/>}/>
+          {/* <Route path='/' element={<Card/>}/> */}
         </Route>
       </Routes>
     </Router>
