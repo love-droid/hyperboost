@@ -93,10 +93,7 @@ const Browsecategory = () => {
         <Collapse in={expanded2} timeout="auto" unmountOnExit>
           <CardContent>
             <Typography paragraph>
-              Lorem Ipsum has been the industry's standard from dummy text ever since the unknown
-              printer to galley of type and make. LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA
-              LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA
-              LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA
+            "Climbing to new marketing heights, HyperBoost's AI-powered solutions rewrite the playbook for success. This case study reveals the transformational journey where data meets innovation, redefining marketing excellence one click at a time."
             </Typography>
           </CardContent>
         </Collapse>
@@ -129,9 +126,7 @@ const Browsecategory = () => {
         <Collapse in={expanded3} timeout="auto" unmountOnExit>
           <CardContent>
             <Typography paragraph>
-              LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA
-              LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA LOWDA
-              LOWDA LOWDA LOWDA LOWDA
+            "Climbing to new marketing heights, HyperBoost's AI-powered solutions rewrite the playbook for success. This case study reveals the transformational journey where data meets innovation, redefining marketing excellence one click at a time."
             </Typography>
           </CardContent>
         </Collapse>

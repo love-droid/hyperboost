@@ -18,8 +18,8 @@ function Browse() {
                     </Col>
                     <Col md={3} xs={2}></Col>
                     <Col md={2} xs={6}>
-                        <Button variant='light' className='browsebutton'>
-                            <span>More cacestudys </span>
+                        <Button variant='light' className='browsebutton' >
+                            <span>More case studies </span>
                             <ExpandCircleDownIcon style={{ transform: 'rotate(270deg)', color: 'blue' }} />
                         </Button>
                     </Col>

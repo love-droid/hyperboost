@@ -20,10 +20,13 @@ function Initial() {
               <p style={{ marginTop: '1rem' }}>we handle end-to-end marketing using AI-powered automations.</p>
             </Row>
             <Row>
+              <a href='https://calendly.com/ranaaditya'>
               <Button variant="primary" color="primary" style={{ marginTop: '1rem', width: '10rem', padding: '10px', marginLeft: '10px' }}>
                 <span>Book a Demo </span>
                 <ArrowRightAltIcon />
               </Button>
+              </a>
+              
             </Row>
           </Col>
           {/* ----------------------------------------------------------------------- */}

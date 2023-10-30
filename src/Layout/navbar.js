@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,7 +15,8 @@ import MenuItem from '@mui/material/MenuItem';
 const pages = ['Home', 'Blogs', 'Case Studies'];
 
 function Navbar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -24,8 +26,24 @@ function Navbar() {
     setAnchorElNav(null);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <AppBar elevation={0} sx={{ backgroundColor: 'transparent' }}>
+    <AppBar elevation={0} sx={{ backgroundColor: isScrolled ? `rgba(255, 255, 255, ${isScrolled ? 0.9 : 0.72})` : 'transparent', backdropFilter: isScrolled ? 'blur(10px)' : 'none', boxShadow: isScrolled ? '0 0 10px rgba(0, 0, 0, 0.3)' : 'none', opacity: isScrolled ? 0.9 : 1 }}>
       <div className='container'>
         <Container maxWidth="xl">
           <Toolbar>
@@ -114,25 +132,40 @@ function Navbar() {
 
             {/*  for large screen ------------------------------------------------------------------------------------------------------------------------------ */}
 
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }}}>
-              {pages.map((page) => (
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'black', display: 'block', mr: 5, textDecoration: 'none'}}
-                >
-                  {page}
-                </Button>
-              ))}
+            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+              {pages.map((page) => {
+                if (page === 'Blogs') {
+                  return (
+                    <Link to="https://blog.hyperboost.in" key={page} style={{ textDecoration: 'none' }}>
+                      <Button
+                        onClick={handleCloseNavMenu}
+                        sx={{ my: 2, color: 'black', display: 'block', mr: 5, textDecoration: 'none' }}
+                      >
+                        {page}
+                      </Button>
+                    </Link>
+                  );
+                } else {
+                  return (
+                    <Button
+                      key={page}
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, color: 'black', display: 'block', mr: 5, textDecoration: 'none' }}
+                    >
+                      {page}
+                    </Button>
+                  );
+                }
+              })}
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
-              <Button variant="contained" color="primary" sx={{fontWeight:200, fontSize:'10px', padding:'0.75rem'}}>
-                Get Started
-              </Button>
+              <a href="https://calendly.com/ranaaditya">
+                <Button variant="contained" color="primary" sx={{ fontWeight: 200, fontSize: '10px', padding: '0.75rem' }}>
+                  Get Started
+                </Button>
+              </a>
             </Box>
-
-            {/* ------------------------------------------------------------------------------------------------------------------------------ */}
 
           </Toolbar>
         </Container>
@@ -140,4 +173,5 @@ function Navbar() {
     </AppBar>
   );
 }
+
 export default Navbar;
