@@ -14,7 +14,7 @@ function Initial() {
               <h1 style={{ marginTop: '7em'}}>Automate marketing</h1>
             </Row>
             <Row>
-              <h1>with just one onClick</h1>
+              <h1>with just one Click</h1>
             </Row>
             <Row>
               <p style={{ marginTop: '1rem' }}>we handle end-to-end marketing using AI-powered automations.</p>
