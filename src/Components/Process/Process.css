@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.backbody {
+    background: linear-gradient(111.23deg, #E9F7FF 9.95%, #FFDBD5 85.17%);
+    z-index: 2;
+  }
+
+  .laddericon {
+    width: 8%;
+    margin-top: 10rem;
+  }
+
+  @media (max-width: 991px) {
+    .laddericon {
+      width: 20%;
+      margin-top: 5rem;
+    }
+  }
+
+.processtext{
+  text-align: center;
+  margin-top: 3rem ;
+  margin-bottom: 3rem;
+}
+
+.content{
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 991px) {
+  .content {
+    margin-top: 5rem;
+  }
+}

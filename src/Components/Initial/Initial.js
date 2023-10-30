@@ -5,12 +5,13 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 function Initial() {
   return (
+    <div className='testbody'>
     <div className='backimg'>
       <Container>
         <Row>
-          <Col md={5}>
+          <Col md={5} xs={7}>
             <Row>
-              <h1 style={{ marginTop: '7em' }}>Automate marketing</h1>
+              <h1 style={{ marginTop: '7em'}}>Automate marketing</h1>
             </Row>
             <Row>
               <h1>with just one onClick</h1>
@@ -26,11 +27,12 @@ function Initial() {
             </Row>
           </Col>
           {/* ----------------------------------------------------------------------- */}
-          <Col md={7}>
-            <img src="/assets/images/image1new.png" alt="" style={{ width:'100%', height:'auto', marginTop:'4rem'}} />
+          <Col md={7} xs={5}>
+            <img className="sideimage" src="/assets/images/image1new.png" alt=""/>
           </Col>
         </Row>
       </Container>
+    </div>
     </div>
   )
 }

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.browsebody{
+    background-color: #292930;
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.browseicon{
+    width: 100%;
+}
+
+.browsebutton{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.gradientbackground{
+    background: linear-gradient(315deg, #FFDA57 0%, #FFDA57 33.3%, #5956E8 66.6%, #5956E8 100%);
+    height: auto;
+    width: 95%;
+    max-width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.photoo{
+    width: 100%;
+    padding: 5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
