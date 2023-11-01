@@ -3,6 +3,7 @@ import Initial from './Initial/Initial'
 import Threepair from './Threepair.js/Threepair'
 import Process from './Process/Process'
 import Browse from './Browse/Browse'
+import Content from './Content/Content'
 
 function Firstpage() {
     return (
@@ -11,6 +12,7 @@ function Firstpage() {
             <Threepair />
             <Process/>
             <Browse/>
+            <Content/>
         </>
     )
 }

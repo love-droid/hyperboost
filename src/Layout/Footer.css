@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footercard{
+    background-color:#292930 ;
+    background-image: url("/public/assets/images/pattern.png");
+    background-size: contain; /* or 'cover' */
+    background-repeat: no-repeat; /* to prevent the image from repeating */
+    background-position: center; /* to center the background image */
+    color:white;
+    height: auto;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    font-family:'Nunito', sans-serif;
+}
+
+.cardtitle{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family:'Nunito', sans-serif;
+}
+
+.hyperboost{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family:'Nunito', sans-serif;
+    color: #FFDC60;
+}

@@ -10,6 +10,11 @@
     padding-bottom: 5rem;
 }
 
+.browsetext{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+}
+
 .browseicon{
     width: 100%;
 }
@@ -18,6 +23,7 @@
     width: 100%;
     padding: 1rem;
     margin-top: 0.5rem;
+    font-family: 'Nunito', sans-serif;
 }
 
 .gradientbackground{

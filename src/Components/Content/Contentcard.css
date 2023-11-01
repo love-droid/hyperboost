@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.yellowcard{
+    background-color: #FFF3CA;
+    padding: 5rem;
+
+}
+
+.cardbutton{
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.cardtexts{
+    font-size: large;
+    text-align: end;
+    margin-top: 12%;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+
+.readmorebutton{
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.bluecard{
+    background-color: #E9F7FF;
+    padding: 5rem;
+    margin-top: 2rem;
+}

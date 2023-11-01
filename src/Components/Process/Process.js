@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Process.css";
+// import Timeline from "./Timeline";
 
 function Process() {
   return (
@@ -13,7 +14,7 @@ function Process() {
         />
       </Row>
 
-      <Row className="jutify-content-center text-center">
+      <Row className="text-center">
         <Col md={3}>
         </Col>
         <Col md={6}>
@@ -26,6 +27,10 @@ function Process() {
       <Row className="justify-content-center text-center mb-5">
         <img src="/assets/images/contentnew.png" alt="" className="content mx-auto" />
       </Row>
+
+      {/* <Row className="justify-content-center mb-5">
+        <Timeline/>
+        </Row> */}
     </Container>
   );
 }

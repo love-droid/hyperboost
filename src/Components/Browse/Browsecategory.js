@@ -38,6 +38,7 @@ const Browsecategory = () => {
           width: expanded1 ? '100%' : '50%',
           transition: 'width 0.5s ease-in-out',
           padding: '1rem',
+          fontFamily: "'Nunito', sans-serif",
         }}
       >
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -55,7 +56,7 @@ const Browsecategory = () => {
         </Box>
         <Collapse in={expanded1} timeout="auto" unmountOnExit>
           <CardContent>
-            <Typography paragraph>Method:</Typography>
+            <Typography paragraph >Method:</Typography>
             <Typography paragraph>
               Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10
               minutes.

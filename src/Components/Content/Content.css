@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contents{
+    width: 8%;
+}
+
+@media (max-width: 991px) {
+    .contents {
+      width: 20%;
+      margin-top: 5rem;
+    }
+  }

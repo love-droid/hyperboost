@@ -11,7 +11,7 @@ height: auto;
 .cardrow{
     margin-left: 3.5rem;
     padding-bottom : 3rem;
-    
+
 }
 
 @media (max-width: 576px) {
@@ -22,8 +22,10 @@ height: auto;
 
 .text{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     position: start;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
 }
 
 .cardbody{
@@ -56,5 +58,12 @@ height: auto;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
     color: #535355;
-    ;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.cardtitles{
+    font-size: 1.4rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
 }
